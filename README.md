@@ -1,3 +1,3 @@
 # Password Generator 
 
-tool to create Passwords with different lengths and Charecter Options 
+The first step was to create a simple Generator that returns a Password. 
