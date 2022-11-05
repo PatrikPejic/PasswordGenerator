@@ -26,11 +26,9 @@ def select_random_char():
     char = special_character_list[random.randint(0, len(special_character_list))]
 
   return char 
-  
-'''
+
 def generate_password(password_length):
   password = "" 
   for i in range(password_length): 
     password += select_random_char()
   return password
-'''
