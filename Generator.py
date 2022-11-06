@@ -14,21 +14,21 @@ def select_random_char():
   char = ""
   char_type = random.randint(0, NUMBER_OF_CHAR_TYPES)
   if char_type == 0: 
-    char = letter_list[random.randint(0, len(letter_list))]
+    char = letter_list[random.randint(0, len(letter_list)-1)]
 
   if char_type == 1: 
-    char = letter_list[random.randint(0, len(letter_list))].upper()
+    char = letter_list[random.randint(0, len(letter_list)-1)].upper()
   
   if char_type == 2: 
-    char = number_list[random.randint(0, len(number_list))]
+    char = number_list[random.randint(0, len(number_list)-1)]
 
   if char_type == 3: 
-    char = special_character_list[random.randint(0, len(special_character_list))]
+    char = special_character_list[random.randint(0, len(special_character_list)-1)]
 
   return char 
 
 def generate_password(password_length):
   password = "" 
   for i in range(password_length): 
-    password += select_random_char()
+    password += str(select_random_char())
   return password
